@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Focus Dashboard</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Student Dashboard</h1>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <main class="container">
+
+        <div class="features-header">
+            <h2>Interactive Features</h2>
+            <p>Use the JavaScript tools below to manage your grades and tasks.</p>
+        </div>
+        
+        <section id="calculator-section">
+            <h2>Grade Calculator</h2>
+            <p>Enter your marks to see if you pass (Pass mark is 50%).</p>
+            
+            <div class="input-group">
+                <label for="subject">Subject Name:</label>
+                <input type="text" id="subject" placeholder="e.g. Mathematics">
+            </div>
+
+            <div class="input-group">
+                <label for="mark1">Test 1 (0-100):</label>
+                <input type="number" id="mark1" placeholder="Enter mark">
+            </div>
+
+            <div class="input-group">
+                <label for="mark2">Test 2 (0-100):</label>
+                <input type="number" id="mark2" placeholder="Enter mark">
+            </div>
+
+            <button id="calculate-btn" class="action-btn">Calculate Average</button>
+            
+            <div id="result-area">Results will appear here...</div>
+        </section>
+
+        <section id="todo-section">
+            <h2>Study Tasks</h2>
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="What do you need to study?">
+                <button id="add-task-btn" class="action-btn" style="margin-top: 5px;">Add Task</button>
+            </div>
+            <ul id="task-list">
+
+                <li>Review Chapter 1 Notes</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Student Focus Dashboard Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
